@@ -7,6 +7,8 @@ import React, { Fragment } from "react";
 import Layout from "../components/Layout";
 import HeroSection from "../components/Home/HeroSection";
 import HireMeSection from "../components/Home/HireMeSection";
+import BlogSection from "../components/Home/BlogSection";
+import BlankSection from "../components/Home/BlankSection";
 
 const Home = () => (
   <Fragment>
@@ -15,6 +17,8 @@ const Home = () => (
       {/* <Nav /> */}
       <HeroSection />
       <HireMeSection />
+      <BlogSection />
+      <BlankSection />
     </Layout>
   </Fragment>
 );

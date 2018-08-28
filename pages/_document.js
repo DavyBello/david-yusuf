@@ -16,6 +16,18 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <style global jsx>{`
+          a {
+            // color: white !important;
+            text-decoration: none !important;
+          }
+          a:hover {
+            color: #DAA520 !important;
+          }
+          .menu-active {
+            color: #DAA520 !important;
+          }
+          `}</style>
       </html>
     )
   }

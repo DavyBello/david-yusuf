@@ -1,16 +1,20 @@
 import { Fragment } from 'react'
 import { Container } from 'reactstrap'
 import Navbar from './Navbar'
+import Footer from './Footer'
 // import SvgLoader from 'bv-react-svgloader'
 
 export default props => (
   <Fragment>
-  <Container>
-    <Navbar/>
-  </Container>
-    <div className='bg-home page-header'></div>
+    <Container>
+      <Navbar/>
+    </Container>
+    <div className='bg-home page-header'>
+
+    </div>
     {/* <SvgLoader src='/static/images/home-background.svg'/> */}
     {props.children}
+    <Footer />
     <style jsx>{`
       .bg-home {
         background-image: url(/static/images/home-background.svg);
@@ -18,7 +22,6 @@ export default props => (
         width: 100%;
       }
       .page-header {
-        // height: 90vh;
         margin: 0;
         border: 0;
         display: flex;
