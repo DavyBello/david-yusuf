@@ -9,7 +9,6 @@
     "preexport": "npm run build",
     "export": "next export",
     "prestart": "npm run export",
-    "heroku-postbuild": "yarn build &&yarn export",
     "start": "serve out"
   },
   "dependencies": {
