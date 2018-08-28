@@ -24,9 +24,6 @@ export default class MyDocument extends Document {
           a:hover {
             color: #DAA520 !important;
           }
-          .menu-active {
-            color: #DAA520 !important;
-          }
           `}</style>
       </html>
     )

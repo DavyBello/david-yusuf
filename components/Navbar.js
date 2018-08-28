@@ -34,7 +34,6 @@ class NavBar extends Component {
     return (
       <Navbar
         color="transparent"
-        // color="dark"
         light expand="md">
         <NavbarBrand href="/"><SvgLoader src='/static/images/logo.svg' className="svg-logo"/></NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
@@ -49,6 +48,11 @@ class NavBar extends Component {
             ))}
           </Nav>
         </Collapse>
+        <style global jsx>{`
+          .menu-active {
+            color: #DAA520 !important;
+          }
+          `}</style>
       </Navbar>
     );
   }
